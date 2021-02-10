@@ -1,0 +1,29 @@
+dist: xenial # Ubuntu 16.04
+
+language: bash
+
+env:
+  - tf_version=0.12.29"
+
+# Only build pushes to master branch
+branches:
+  only:
+    - master
+
+before_install:
+  - wget https://releases.hashicorp.com/terraform/"$tf_version"/terraform_"$tf_version"_linux_amd64.zip
+  - unzip terraform_"$tf_version"_linux_amd64.zip
+  - sudo mv terraform /usr/local/bin/
+  - rm terraform_"$tf_version"_linux_amd64.zip
+
+
+# Terraform Commands
+jobs:
+  include:
+    - stage: terraform steps
+      script:
+        - echo "Executing Terraform ec2 example plan"
+        - terraform -version
+        - terraform init
+        - terraform validate
+        - terraform plan
