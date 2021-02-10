@@ -8,7 +8,7 @@ env:
 # Only build pushes to master branch
 branches:
   only:
-    - master
+    - main
 
 before_install:
   - wget https://releases.hashicorp.com/terraform/"$tf_version"/terraform_"$tf_version"_linux_amd64.zip
