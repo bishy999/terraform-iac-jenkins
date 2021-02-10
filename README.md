@@ -3,7 +3,7 @@ Jenkins setup in multi region AWS using Terraforms. Working off a linux academy 
 
 
 ## Status
-[![Build Status](https://travis-ci.com/bishy999/terraform-iac-jenkins.svg?branch=master)](   )
+[![Build Status](https://travis-ci.com/bishy999/terraform-iac-jenkins.svg?branch=main)](   )
 ![GitHub Repo size](https://img.shields.io/github/repo-size/bishy999/terraform-iac-jenkins)
 [![GitHub Tag](https://img.shields.io/github/tag/bishy999/terraform-iac-jenkins.svg)](https://github.com/bishy999/terraform-iac-jenkins/latest)
 [![GitHub Activity](https://img.shields.io/github/commit-activity/m/bishy999/terraform-iac-jenkins)](https://github.com/bishy999/terraform-iac-jenkins)
