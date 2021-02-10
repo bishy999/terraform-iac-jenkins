@@ -3,7 +3,7 @@ dist: xenial # Ubuntu 16.04
 language: bash
 
 env:
-  - tf_version=0.12.29"
+  - tf_version=0.12.29
 
 # Only build pushes to master branch
 branches:
