@@ -26,4 +26,3 @@ jobs:
         - terraform -version
         - terraform init
         - terraform fmt
-        - terraform plan
